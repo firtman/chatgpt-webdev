@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cooking Masters</title>
+    <base href="/cooking">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="app.webmanifest">
+    <link rel="apple-touch-icon" href="/images/icon-permissions.svg">
+    <link rel="icon" href="images/icon-permissions.svg">
+
+    <script src="scripts/app.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="javascript:app.router.go('/')"><img src="images/logo.svg" alt="Cooking Masters" id="logo"></a></h1>
+        <div></div>
+    </header>
+
+    <main>
+        <section class="page" id="home">
+
+            <section class="form">
+                <textarea id="ingredients" placeholder="Enter here the ingredients you have at home"></textarea>
+                <button onclick="app.recipeAI()">Get a Recipe with AI</button>
+            </section>
+
+            <section class="two-columns" id="ai-recipe">
+                    
+            </section>
+
+            <section class="two-columns">
+                <div>
+                    <h3>Recipe of the Week</h3>
+                    <div id="recipe-week"></div>
+
+                </div>
+                <div>
+                    <h3>Most Cooked</h3>
+                    <div id="recipe-most"></div>
+
+                </div>
+            </section>
+
+
+            <section id="all">
+                <h3>All Recipes</h3>
+                <ul>
+
+                </ul>
+            </section>
+        </section>
+       
+
+        <section class="page" id="recipe">
+            <header>
+                <section>
+                    <h2></h2>
+                    <p class="metadata"></p>
+                    <button>Start Cooking</button>
+                </section>
+                <img>
+            </header>
+
+            <section id="cooking" hidden>
+                <div>
+                    <h2></h2>
+                    <h3></h3>
+                </div>
+                
+                <div class="step">
+                </div>
+                <section class="timers">
+                    <ul>
+                        
+                    </ul>
+                </section>
+                <section class="toolbar">
+                    <button id="btn-previous" onclick="app.cooking.previous()">Previous</button>
+                    <button id="btn-next" onclick="app.cooking.next()">Next</button>
+                </section>
+            </section>
+
+            <section>
+                <h3>Description</h3>
+                <p class="description"></p>
+
+                <h3>Ingredients</h3>
+                <dl></dl>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/logo.svg" alt="Cooking Masters">
+            <p>This is a project for a <a href="https://frontendmasters.com" target="_blank">Frontend Masters</a>
+                workshop by <a href="https://firt.dev" target="_blank">Maximiliano Firtman</a>.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#chatbox {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+}
+
+ul {
+    flex-grow: 10;
+    padding-bottom: 50px;
+}
+
+ul li::before {
+    content: '🤖'
+}
+
+ul li:has(b)::before {
+    content: '🧑'
+}
+
+input {
+    padding: 8px;
+    width: 50%;
+    min-width: 300px;;
+    background-color: #444;
+    color: white;
+}
+
+button {
+    border: 0;
+    background-color: orangered;
+    color: white;
+}
+
+output {
+    background-color: beige;
+    font-size: small;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}

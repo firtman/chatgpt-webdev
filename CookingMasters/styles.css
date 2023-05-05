@@ -1,0 +1,408 @@
+:root {
+    --background-surface: #F1F1F3;
+    --primaryColor: #C06918;
+    --secondaryColor: #333D29;
+    --color3: #8D8D8D;
+    --color4: #B08968;
+    --color5: #DDB892;
+    --color6: #EDE0D4;
+    --highlight: #FBF2C6;
+}
+
+
+
+body {
+    background-color: var(--background-surface);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+textarea {
+    width: 80%;
+    height: 80px;
+    font-size: 19px;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+main a:hover {
+    scale: 1.05;
+    transition: scale 100ms;
+}
+
+main {
+    max-width: 850px;
+    margin: auto;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+body>header {
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+body>header * {
+    flex-grow: 1;
+}
+
+
+
+footer {
+    border-top: 1px solid var(--primaryColor);
+}
+
+footer div {
+    max-width: 850px;
+    margin: auto;
+    margin-top: 18px;
+    width: 100%;
+}
+
+footer a {
+    color: var(--primaryColor);
+}
+
+footer p {
+    font-size: 13px;
+    color: var(--color3)
+}
+
+img#logo {
+    width: 200px;
+}
+
+#btn-permissions {
+    text-align: right;
+}
+
+#btn-permissions img {
+    width: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 13px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid orange;
+    margin-top: 24px;
+
+}
+
+.two-columns {
+    display: flex;
+}
+
+.two-columns div:first-child {
+    margin-right: 10px;
+}
+.two-columns div {
+    flex-grow: 1;
+}
+
+h3, .recipe {
+    width: 400px;
+}
+
+.recipe {
+    background: white;
+    border-radius: 15px;
+    padding-bottom: 8px;
+    box-shadow: 0px 6px 6px -10px rgba(0, 0, 0, 0.45), 6px 0 6px -10px rgba(0, 0, 0, 0.45);}
+
+.recipe h4 {
+    margin: 0 0 0 12px;
+} 
+
+.recipe p {
+    margin: 4px 12px;
+    font-size: 11px;
+    color: var(--color3);
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.recipe.small {
+    width: 195px;
+}
+.recipe.small img {
+    height: 96px;
+}
+
+section#all h3 {
+    margin-top: 16px;
+    width: 100%;
+}
+
+section#all ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-content: space-between;
+}
+
+
+button {
+    background-color: var(--primaryColor);
+    color: white;
+    width: 300px;
+    padding: 8px;
+    font-size: 17px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#recipe, #permissions {
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px -6px 6px -10px rgba(0, 0, 0, 0.45), 6px 0 16px -10px rgba(0, 0, 0, 0.45);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.page h2 {
+    font-size: 40px;
+    margin: 0;
+    margin-top: 16px;
+}
+
+article h3 {
+    border: 0;
+    font-size: 1.15em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.page dl, .page p {
+    font-size: 0.9em;
+}
+
+.page header section {
+    margin-right: 16px;
+    padding-left: 16px;
+    flex: 2
+}
+
+#recipe img {
+    width: 300px;
+}
+
+dl {    
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+dd, dt {
+    display: block;
+    flex-grow: 1;
+}
+dt {
+    width: 200px;
+}
+dd {
+    width: 90px;
+    margin: 0;
+    text-align: right;
+    margin-bottom: 8px;
+    color: var(--color3)
+}
+
+
+.page header img {
+    flex-grow: 1;
+    flex: 1;    
+    border-top-right-radius: 15px;
+}
+
+.page header {
+    display: flex;
+}
+
+.page>section {
+    margin: 16px;
+}
+
+#permissions {
+    color: var(--secondaryColor)
+}
+
+#permissions dd, #permissions dt {
+    width: 40%;
+}
+
+#permissions {
+    text-align: center;
+}
+
+#permissions h2 {
+    font-size: 24px;
+}
+
+#permissions button {
+    width: auto;
+}
+
+#permissions img {
+    width: 150px;
+    margin-top: 24px;
+}
+
+#permissions h3 {
+    width: auto;
+    margin: 0;
+    border: 0;
+    text-align: right;
+    font-weight: bold;
+    padding: 0;
+}
+#permissions table {
+    max-width: 400px;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 24px;
+    column-gap: 10px;
+}
+
+#permissions td {
+    height: 30px;
+    vertical-align: center;
+    padding: 12px;
+}
+
+#permissions button {
+    font-size: 13px;
+}
+
+#permissions span {
+    text-align: left;
+}
+
+#permissions button {
+    width: 80px;
+}
+
+
+#cooking {
+    background-color: var(--background-surface);
+    padding: 36px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+    row-gap: 12px;
+}
+
+#cooking[hidden] {
+    display: none;
+}
+
+#cooking h2 {
+    color: var(--primaryColor);
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+}
+
+#cooking h3 {
+    text-align: center;
+    font-size: 25px;
+    width: auto;
+    border: 0;
+    margin: 0;
+}
+
+#cooking .step {
+    background-color: white;
+    padding: 18px;
+    border-radius: 15px;
+    font-size: 50px;
+    flex-grow: 1;
+    border: 2px solid var(--primaryColor)
+}
+
+#cooking .toolbar {
+    width: 100%;
+    display: flex;
+    column-gap: 18px;
+    align-items: stretch;
+    margin: 0;
+}
+
+#cooking .timers {
+    height: 100px;
+    margin: 0;
+}
+
+#cooking button {
+    width: 100%;
+}
+
+#cooking .status {
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    padding: 18px;
+    margin: 18px 0;
+    text-align: center;
+}
+
+#cooking .status span {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+#cooking .status span.on {
+    opacity: 1;
+    font-size: 25px;
+}
+
+#cooking .status span.off {
+    opacity: 0.3
+}
+
+#cooking .timers ul {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    column-gap: 16px;
+}
+
+#cooking .timer {
+    background-color: white;
+    border-radius: 15px;
+    padding: 18px;
+    text-align: center;
+    width: 150px;
+}
+
+#cooking .timer h5 {
+    margin: 0;
+}
+
+#cooking .timer p {
+    font-size: 32px;
+    margin: 0;
+}
