@@ -1,6 +1,6 @@
 
 
-const OPENIA_KEY = "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";
+const OPENAI_KEY = "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";
 
 const path = require('path');
 const express = require('express');
